@@ -1,0 +1,58 @@
+{
+    "data": {
+        "year": {
+            "id": 2020,
+            "userid": "sheetalssr",
+            "Ygoals": [
+                {
+                    "id": "2020_1",
+                    "name": "Complete Alex Xu System Design",
+                    "status": "to start"
+                },
+                {
+                    "id": "2020_1",
+                    "name": "Read 12 Books",
+                    "status": "to start"
+                }
+            ]
+        },
+        "months": {
+            "Jan": {
+                "id": "2020_jan_1",
+                "year": 2020,
+                "Mgoals": [
+                    {
+                        "id": "2020_Jan_mgoal_1",
+                        "associatedYearlyGoalId":"2020_1",
+                        "name": "Complete till chapter 6",
+                        "status": "to start"
+                    },
+                    {
+                        "id": "2020_Jan_mgoal_2",
+                        "associatedYearlyGoalId":"2020_2",
+                        "name": "Read 1 Book",
+                        "status": "to start"
+                    }
+                ]
+            },
+            "Feb": {
+                "id": "2020_jan_1",
+                "year": 2020,
+                "Mgoals": [
+                    {
+                        "id": "2020_Jan_mgoal_1",
+                        "associatedYearlyGoalId":"2020_1",
+                        "name": "Complete till chapter 8",
+                        "status": "to start"
+                    },
+                    {
+                        "id": "2020_Jan_mgoal_1",
+                        "associatedYearlyGoalId":"2020_2",
+                        "name": "Read 1 book",
+                        "status": "to start"
+                    }
+                ]
+            }
+        }
+    }
+}

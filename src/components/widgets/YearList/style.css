@@ -1,0 +1,49 @@
+.rustic-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #333;
+  background-color: #e0d7c6;
+  border: 2px solid #8b7d6b;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.year-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.rustic-button::before,
+.rustic-button::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #8b7d6b;
+  top: -4px;
+  left: -4px;
+  z-index: -1;
+}
+
+.rustic-button::after {
+  top: 4px;
+  left: 4px;
+  z-index: -2;
+}
+
+.rustic-button:hover {
+  background-color: #8b7d6b;
+  color: #e0d7c6;
+  border-color: #333;
+}
+
+.rustic-button:focus {
+  outline-color: #333;
+}
