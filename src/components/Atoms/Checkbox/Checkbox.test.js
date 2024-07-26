@@ -1,16 +1,19 @@
-import { unmountComponentAtNode } from "react-dom";
-import { afterEach, beforeEach } from 'vitest'
+import { render, screen, fireEvent } from '@testing-library/react';
+import '@testing-library/jest-dom';
 import { describe, it, expect } from 'vitest';
-let container = null;
-// beforeEach(() => {
-//   // setup a DOM element as a render target
-//   container = document.createElement("div");
-//   document.body.appendChild(container);
-// });
+import Checkbox from './Checkbox';
 
-describe('something truthy and falsy', () => {
-  it('true to be true', () => {
-    expect(true).toBe(true);
+
+describe('Atom : Checkbox Component', () => {
+  it('Should not be striked off by default', () => {
+    render(<Checkbox label="Test Label"/>)
+    expect(false).toBe(false);
+
+    const checkbox = screen.getByTestId("checkbox");
+    const checkboxLabel = screen.getByTestId("checkbox-label");
+
+    expect(checkbox).not.toBeChecked();
+    expect(checkboxLabel).not.toHaveStyle('text-decoration: line-through');
   });
 
   it('false to be false', () => {
@@ -18,9 +21,3 @@ describe('something truthy and falsy', () => {
   });
 });
 
-// afterEach(() => {
-//   // cleanup on exiting
-//   unmountComponentAtNode(container);
-//   container.remove();
-//   container = null;
-// });

@@ -16,10 +16,15 @@ const Checkbox = ({ label }) => {
           textDecoration: isChecked ? "line-through" : "none",
           marginRight: "10px",
         }}
+        data-testid="checkbox-label"
       >
         {label}
       </span>
-      <CheckboxDefault onChange={onChange} checked={isChecked} />
+      <CheckboxDefault
+        onChange={onChange}
+        checked={isChecked}
+        data-testid="checkbox"
+      />
     </div>
   );
 };
